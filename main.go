@@ -12,9 +12,9 @@ func main() {
 		if err != nil {
 			return err
 		} else if info.IsDir() {
-			fmt.Printf("Directory: %s", filepath.ToSlash(path))
+			fmt.Printf("Directory: %s", path)
 		} else {
-			fmt.Printf("File: %s", filepath.ToSlash(path))
+			fmt.Printf("File: %s", path)
 		}
 
 		fmt.Println("")
